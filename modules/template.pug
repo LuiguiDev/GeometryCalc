@@ -1,0 +1,9 @@
+include configurations.pug
+doctype html
+html(lang="es")
+  include head.pug
+  body 
+    include header.pug 
+    block content
+    script(src="index.js") 
+    include footer.pug
