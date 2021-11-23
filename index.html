@@ -12,11 +12,22 @@
   </head>
   <body> 
     <h1>Welcome to GeometryCalc</h1>
-    <form action="">
-      <label for="entry">Ingresa el número</label>
-      <input id="entry" type="number">
-      <button onclick="getInput()" type="button">Ingresar</button>
-    </form>
+    <div class="geometry">
+      <h2>CUADRADO</h2>
+      <div class="geometry__content"><img src="images/squeare.png" alt="square"/>
+        <div class="geometry__form">
+          <form action="">
+            <label for="entry">Ingresa la longitud de uno de los lados</label><br/>
+            <input id="entry" type="Number"/>
+            <button type="button" onclick="getInput()">Ingresar</button>
+          </form>
+          <h3>Área</h3>
+          <p id="areaContainer"></p>
+          <h3>Perímetro</h3>
+          <p id="perimeterContainer"></p>
+        </div>
+      </div>
+    </div>
     <script src="index.js"> </script>
   </body>
 </html>

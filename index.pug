@@ -1,6 +1,3 @@
 extend modules/template.pug
 block content
-  form(action="")
-    label(for="entry") Ingresa el número
-    input(id="entry" type="number")
-    button(onclick="getInput()" type="button") Ingresar
+  +calc("Ingresa la longitud de uno de los lados")

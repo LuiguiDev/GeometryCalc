@@ -31,7 +31,11 @@ const circlePerimeter = (radius, pi) => {
 const getInput = () => {
   var input = document.getElementById("entry");
   var value = input.value;
-  var calc = squareArea(value);
-  var cal2 = squarePerimeter(value);
-  alert(calc);
+  var area = squareArea(value);
+  var perimeter = squarePerimeter(value);
+  
+  const writerA = document.getElementById("areaContainer");
+  writerA.innerText = area + " cm2"
+  const writerB = document.getElementById("perimeterContainer");
+  writerB.innerText = perimeter + " cm"
 };

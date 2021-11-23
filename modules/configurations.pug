@@ -1,0 +1,17 @@
+mixin calc (text)
+  .geometry
+    h2= "CUADRADO"
+    .geometry__content
+      img(src="images/squeare.png", alt="square")
+      .geometry__form
+        form(action="")
+          label(for="entry")= text
+          br
+          input(id="entry" type="Number")
+          button(type="button" onclick="getInput()")= "Ingresar"
+        h3= "Área"
+        p(id="areaContainer")
+        h3= "Perímetro"
+        p(id="perimeterContainer")
+
+  
