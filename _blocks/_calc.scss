@@ -1,5 +1,9 @@
 .geometry{
   width: 100%;
+  margin-bottom: 200px;
+  h2{
+    text-transform: capitalize;
+  }
   &__content{
     display: flex;
     align-items: center;

@@ -13,18 +13,34 @@
   <body> 
     <h1>Welcome to GeometryCalc</h1>
     <div class="geometry">
-      <h2>CUADRADO</h2>
-      <div class="geometry__content"><img src="images/squeare.png" alt="square"/>
+      <h2>square</h2>
+      <div class="geometry__content"><img src="images/square.png" alt="square"/>
         <div class="geometry__form">
           <form action="">
-            <label for="entry">Ingresa la longitud de uno de los lados</label><br/>
-            <input id="entry" type="Number"/>
-            <button type="button" onclick="getInput()">Ingresar</button>
+            <label for="squareEntry">Write the measure of one of its sides</label><br/>
+            <input id="squareEntry" type="Number"/>
+            <button type="button" onclick="squareResults()">Submit</button>
           </form>
-          <h3>Área</h3>
-          <p id="areaContainer"></p>
-          <h3>Perímetro</h3>
-          <p id="perimeterContainer"></p>
+          <h3>Area</h3>
+          <p id="squareAreaC"></p>
+          <h3>Perimeter</h3>
+          <p id="squarePerimeterC"></p>
+        </div>
+      </div>
+    </div>
+    <div class="geometry">
+      <h2>Triangle</h2>
+      <div class="geometry__content"><img src="images/Triangle.png" alt="square"/>
+        <div class="geometry__form">
+          <form action="">
+            <label for="TriangleEntry">Write the measure from the base and the height</label><br/>
+            <input id="TriangleEntry" type="Number"/>
+            <button type="button" onclick="TriangleResults()">Submit</button>
+          </form>
+          <h3>Area</h3>
+          <p id="TriangleAreaC"></p>
+          <h3>Perimeter</h3>
+          <p id="TrianglePerimeterC"></p>
         </div>
       </div>
     </div>

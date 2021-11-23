@@ -1,17 +1,19 @@
-mixin calc (text)
+-var shapes = ["square", "Triangle", "Circle"]
+
+mixin calc(setShape, text)
   .geometry
-    h2= "CUADRADO"
+    h2= setShape
     .geometry__content
-      img(src="images/squeare.png", alt="square")
+      img(src="images/" + setShape +".png", alt="square")
       .geometry__form
         form(action="")
-          label(for="entry")= text
+          label(for= setShape + "Entry")= text
           br
-          input(id="entry" type="Number")
-          button(type="button" onclick="getInput()")= "Ingresar"
-        h3= "Área"
-        p(id="areaContainer")
-        h3= "Perímetro"
-        p(id="perimeterContainer")
+          input(id= setShape + "Entry" type="Number")
+          button(type="button" onclick= setShape + "Results()")= "Submit"
+        h3= "Area"
+        p(id= setShape + "AreaC")
+        h3= "Perimeter"
+        p(id=setShape + "PerimeterC")
 
   

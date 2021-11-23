@@ -17,6 +17,10 @@ body {
 
 .geometry {
   width: 100%;
+  margin-bottom: 200px;
+}
+.geometry h2 {
+  text-transform: capitalize;
 }
 .geometry__content {
   display: -webkit-box;

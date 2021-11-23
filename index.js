@@ -28,14 +28,26 @@ const circlePerimeter = (radius, pi) => {
   return result
 };
 
-const getInput = () => {
-  var input = document.getElementById("entry");
+const squareResults = () => {
+  var input = document.getElementById("squareEntry");
   var value = input.value;
   var area = squareArea(value);
   var perimeter = squarePerimeter(value);
   
-  const writerA = document.getElementById("areaContainer");
+  const writerA = document.getElementById("squareAreaC");
   writerA.innerText = area + " cm2"
-  const writerB = document.getElementById("perimeterContainer");
+  const writerB = document.getElementById("squarePerimeterC");
+  writerB.innerText = perimeter + " cm"
+};
+
+const triangleResults = () => {
+  var input = document.getElementById("triangleEntry");
+  var value = input.value;
+  var area = triangleArea(value);
+  var perimeter = trianglePerimeter(value);
+  
+  const writerA = document.getElementById("triangleAreaC");
+  writerA.innerText = area + " cm2"
+  const writerB = document.getElementById("trianglePerimeterC");
   writerB.innerText = perimeter + " cm"
 };
