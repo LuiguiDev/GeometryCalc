@@ -2,7 +2,6 @@ const squareArea = (side) => {
   let result = side * side;
   return result
 };
-
 const squarePerimeter = (side) => {
   let result = side * 4;
   return result
@@ -12,7 +11,6 @@ const triangleArea = (base, height) => {
   let result = base * height /2;
   return result
 };
-
 const trianglePerimeter = (side1, side2, side3) => {
   let result = side1 + side2 + side3;
   return result
@@ -22,8 +20,7 @@ const circleArea = (radius) => {
   let result = radius * Math.PI * 2;
   return result
 };
-
-const circlePerimeter = (radius, pi) => {
+const circlePerimeter = (radius) => {
   let result = 2 * Math.PI * radius;
   return result
 };
@@ -40,14 +37,22 @@ const squareResults = () => {
   writerB.innerText = perimeter + " cm"
 };
 
-const triangleResults = () => {
-  var input = document.getElementById("triangleEntry");
-  var value = input.value;
-  var area = triangleArea(value);
-  var perimeter = trianglePerimeter(value);
+const triangleCalcArea = () => {
+  var inputB = document.getElementById("triangleEntryB");
+  var inputH = document.getElementById("triangleEntryH");
+  var values = [inputB.value, inputH.value]
+  var area = triangleArea(values[0], values[1]);
   
   const writerA = document.getElementById("triangleAreaC");
   writerA.innerText = area + " cm2"
-  const writerB = document.getElementById("trianglePerimeterC");
-  writerB.innerText = perimeter + " cm"
 };
+const triangleCalcPerimeter = () => {
+  var inputA = document.getElementById("triangleSideA");
+  var inputB = document.getElementById("triangleSideB");
+  var inputC = document.getElementById("triangleSideC");
+  var sides = [inputA.value, inputB.value, inputC.value];
+  var perimeter = trianglePerimeter(Number(sides[0]), Number(sides[1]), Number(sides[2]));
+
+  const writerP = document.getElementById("trianglePerimeterC")
+  writerP.innerText = perimeter
+}

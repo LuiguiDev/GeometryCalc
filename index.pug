@@ -1,4 +1,32 @@
 extend modules/template.pug
 block content
-  +calc(shapes[0], "Write the measure of one of its sides")
-  +calc(shapes[1], "Write the measure from the base and the height")
+  <!-- +calc(shapes[0], "Write the measure of one side") -->
+  .geometry
+    h2= "Triangle"
+    .geometry__content
+      img(src="images/triangle.png", alt="triangle")
+      .geometry__form
+        form(action="")
+          label(for="triangleEntryB")= "Write the measuere of the base"
+            input(type="number" id="triangleEntryB")
+          br
+          label(for="triangleEntryH")= "Write the measure of the height"
+            input(type="number" id="triangleEntryH")
+          br
+          button(type="button" onclick= "triangleCalcArea()")= "Submit"
+        h3= "Area"
+        p(id= "triangleAreaC")
+        form(action="")
+          label(for="triangleSideA")= "Write the measure of side A"
+            input(type="number" id="triangleSideA") 
+            br 
+          label(for="triangleSideB")= "Write the measure of side B"
+            input(type="number" id="triangleSideB") 
+            br
+          label(for="triangleSideC")= "Write the measure of side C"
+            input(type="number" id="triangleSideC")
+            br
+          button(type="button" onclick="triangleCalcPerimeter()")= "Submit"
+        h3= "Perimeter"
+        p(id= "trianglePerimeterC")
+  
