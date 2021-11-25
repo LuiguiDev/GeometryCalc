@@ -7,6 +7,15 @@ const squarePerimeter = (side) => {
   return result
 };
 
+const rectangleArea = (base, height) => {
+  let result = base * height;
+  return result;
+};
+const rectangleP = (base, height) => {
+  let result = base + height + base + height;
+  return result;
+};
+
 const triangleArea = (base, height) => {
   let result = base * height /2;
   return result
@@ -36,6 +45,21 @@ const squareResults = () => {
   const writerB = document.getElementById("squarePerimeterC");
   writerB.innerText = perimeter + " cm"
 };
+
+const rectangleResults = () => {
+  var inputBase = document.getElementById("rectangleEntryB");
+  var inputHeight = document.getElementById("rectangleEntryH");
+  var values = [inputBase.value, inputHeight.value];
+  var area = rectangleArea(values[0], values[1]);
+  var perimeter = rectangleP(Number(values[0]), Number(values[1]));
+
+  let writerS = document.getElementById("rectangleP");
+  writerS.innerText = perimeter + "cm"
+  let writerA = document.getElementById("rectangleAreaC");
+  writerA.innerText = area + "cm2";
+}
+
+
 
 const triangleCalcArea = () => {
   var inputB = document.getElementById("triangleEntryB");

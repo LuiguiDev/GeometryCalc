@@ -2,6 +2,22 @@ extend modules/template.pug
 block content
   +calc(shapes[0], "Write the measure of one side")
   +calc(shapes[2], "Write the measure of the radius")
+  .geometry 
+    h2= "Rectangle"
+    .geometry__content 
+      img(src="images/square.png", alt="Rectangle")
+      .geometry__form 
+        form(action="")
+          label(for="rectangleEntryB")= "Write the measure of the base"
+            input(type="number" id="rectangleEntryB")
+          label(for="rectangleEntryH")= "Write the measure of the height"
+            input(type="number" id="rectangleEntryH")
+          button(type="button" onclick="rectangleResults()")="Submit"
+          h3= "Area"
+          p(id="rectangleAreaC")
+          h3= "Perimeter"
+          p(id="rectangleP")          
+
   .geometry
     h2= "Triangle"
     .geometry__content
