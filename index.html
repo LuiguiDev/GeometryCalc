@@ -11,7 +11,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;800&amp;display=swap" rel="stylesheet">
   </head>
   <body> 
-    <h1>Welcome to GeometryCalc</h1><!-- +calc(shapes[0], "Write the measure of one side") -->
+    <h1>Welcome to GeometryCalc</h1>
+    <div class="geometry">
+      <h2>square</h2>
+      <div class="geometry__content"><img src="images/square.png" alt="square"/>
+        <div class="geometry__form">
+          <form action="">
+            <label for="squareEntry">Write the measure of one side</label><br/>
+            <input id="squareEntry" type="Number"/>
+            <button type="button" onclick="squareResults()">Submit</button>
+          </form>
+          <h3>Area</h3>
+          <p id="squareAreaC"></p>
+          <h3>Perimeter</h3>
+          <p id="squarePerimeterC"></p>
+        </div>
+      </div>
+    </div>
+    <div class="geometry">
+      <h2>circle</h2>
+      <div class="geometry__content"><img src="images/circle.png" alt="square"/>
+        <div class="geometry__form">
+          <form action="">
+            <label for="circleEntry">Write the measure of the radius</label><br/>
+            <input id="circleEntry" type="Number"/>
+            <button type="button" onclick="circleResults()">Submit</button>
+          </form>
+          <h3>Area</h3>
+          <p id="circleAreaC"></p>
+          <h3>Perimeter</h3>
+          <p id="circlePerimeterC"></p>
+        </div>
+      </div>
+    </div>
     <div class="geometry">
       <h2>Triangle</h2>
       <div class="geometry__content"><img src="images/triangle.png" alt="triangle">

@@ -1,6 +1,7 @@
 extend modules/template.pug
 block content
-  <!-- +calc(shapes[0], "Write the measure of one side") -->
+  +calc(shapes[0], "Write the measure of one side")
+  +calc(shapes[2], "Write the measure of the radius")
   .geometry
     h2= "Triangle"
     .geometry__content
