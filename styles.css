@@ -34,3 +34,23 @@ body {
           justify-content: space-evenly;
   margin-top: 100px;
 }
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 5px, solid, white;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 300px;
+}
+footer .media {
+  display: block;
+  width: 200px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+footer .contact {
+  width: 100px;
+}

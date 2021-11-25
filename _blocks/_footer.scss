@@ -1,0 +1,14 @@
+footer{
+  display: flex;
+  border: 5px, solid, white;
+  justify-content: space-evenly;
+  height: 300px;
+  .media{
+    display: block;
+    width: 200px;
+    justify-content: space-around;
+  }
+  .contact{
+    width: 100px;
+  }
+}
