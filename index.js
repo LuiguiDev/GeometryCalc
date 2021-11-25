@@ -18,11 +18,11 @@ const trianglePerimeter = (side1, side2, side3) => {
 
 const circleArea = (radius) => {
   let result = Math.PI * radius ** 2;
-  return result
+  return parseInt(result)
 };
 const circlePerimeter = (radius) => {
   let result = 2 * Math.PI * radius;
-  return result
+  return parseInt(result)
 };
 
 const squareResults = () => {
@@ -67,4 +67,4 @@ const circleResults = () => {
   writerA.innerText = area + "cm2";
   var writerP = document.getElementById("circlePerimeterC");
   writerP.innerText = perimeter + "cm";
-}
+};
