@@ -1,13 +1,81 @@
 $Fuente1: "Nunito", sans-serif;
+$mainColor: rgb(25, 25, 27);
+$secondColor: rgba(255, 255, 255, 0.924);
+$spacing: 50px;
+$midSpacing: 25px;
+$textSpacing: 10px;
 
+body{
+  background-color: $mainColor;
+  font-family: $Fuente1;
+  color: $secondColor;
+  margin: 0;
+}
+h1{
+  margin: 0;
+}
 h2{
+  margin: 0;
   font-size: 40px;
   display: flex;
   justify-content: center;
 }
-body{
-  background-color: rgb(25, 25, 27);
-  font-family: $Fuente1;
-  color: white;
+h3{
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: $midSpacing;  
+}
+p{
+  margin-top: 0;
+  margin-bottom: $textSpacing;
+}
+a{
   margin: 0;
+}
+button{
+  width: 33%;
+  border: none;
+  background-color: $mainColor;
+  height: 25px;
+  border-radius: 5px;
+  color: $secondColor;
+}
+
+//Media icons
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?nuvgyr');
+  src:  url('fonts/icomoon.eot?nuvgyr#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?nuvgyr') format('truetype'),
+    url('fonts/icomoon.woff?nuvgyr') format('woff'),
+    url('fonts/icomoon.svg?nuvgyr#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\e900";
+}
+.icon-linkedin:before {
+  content: "\e901";
+}
+.icon-github:before {
+  content: "\eab0";
 }

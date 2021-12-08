@@ -10,12 +10,13 @@ block content
         form(action="")
           label(for="rectangleEntryB")= "Write the measure of the base"
             input(type="number" id="rectangleEntryB")
+            br
           label(for="rectangleEntryH")= "Write the measure of the height"
             input(type="number" id="rectangleEntryH")
           button(type="button" onclick="rectangleResults()")="Submit"
-          h3= "Area"
+          h3= "Area:"
           p(id="rectangleAreaC")
-          h3= "Perimeter"
+          h3= "Perimeter:"
           p(id="rectangleP")          
 
   .geometry
@@ -31,7 +32,7 @@ block content
             input(type="number" id="triangleEntryH")
           br
           button(type="button" onclick= "triangleCalcArea()")= "Submit"
-        h3= "Area"
+        h3= "Area:"
         p(id= "triangleAreaC")
         form(action="")
           label(for="triangleSideA")= "Write the measure of side A"
@@ -43,7 +44,7 @@ block content
           label(for="triangleSideC")= "Write the measure of side C"
             input(type="number" id="triangleSideC")
             br
-          button(type="button" onclick="triangleCalcPerimeter()")= "Submit"
-        h3= "Perimeter"
+          button(type="button" onclick="triangleCalcPerimeter()" class="button")= "Submit"
+        h3= "Perimeter:"
         p(id= "trianglePerimeterC")
   

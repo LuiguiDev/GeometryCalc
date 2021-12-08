@@ -1,4 +1,17 @@
+@charset "UTF-8";
+body {
+  background-color: #19191b;
+  font-family: "Nunito", sans-serif;
+  color: rgba(255, 255, 255, 0.924);
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
 h2 {
+  margin: 0;
   font-size: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,49 +21,175 @@ h2 {
           justify-content: center;
 }
 
-body {
-  background-color: #19191b;
-  font-family: "Nunito", sans-serif;
-  color: white;
+h3 {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+a {
   margin: 0;
+}
+
+button {
+  width: 33%;
+  border: none;
+  background-color: #19191b;
+  height: 25px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.924);
+}
+
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon.eot?nuvgyr");
+  src: url("fonts/icomoon.eot?nuvgyr#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?nuvgyr") format("truetype"), url("fonts/icomoon.woff?nuvgyr") format("woff"), url("fonts/icomoon.svg?nuvgyr#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=icon-], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "icomoon" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "";
+}
+
+.icon-linkedin:before {
+  content: "";
+}
+
+.icon-github:before {
+  content: "";
+}
+
+h1 {
+  text-align: center;
+  margin: 50px;
 }
 
 .geometry {
   width: 100%;
+  height: auto;
   margin-bottom: 200px;
 }
 .geometry h2 {
   text-transform: capitalize;
 }
+.geometry h3 {
+  text-align: left;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
 .geometry__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  margin-top: 100px;
+  margin-top: 25px;
+}
+.geometry__content img {
+  width: 40%;
+  height: auto;
+}
+.geometry__form {
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.924);
+  padding: 20px;
+  border-radius: 10px;
+  color: #19191b;
+  width: 65%;
+}
+.geometry__form input {
+  width: 100px;
+  height: 20px;
+  border: 1px solid #19191b;
+  border-radius: 5px;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+.geometry__form p {
+  height: 1.2em;
 }
 
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border: 5px, solid, white;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(255, 255, 255, 0.924);
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  height: 300px;
+  padding: 50px;
+  color: #19191b;
 }
 footer .media {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 200px;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  margin-bottom: 50px;
+}
+footer .media a {
+  text-decoration: none;
+  color: #19191b;
+  font-size: 32px;
 }
 footer .contact {
-  width: 100px;
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+footer .contact input {
+  border: 0;
+  border-radius: 5px;
+  background-color: #19191b;
+  width: 200px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+footer .contact .message {
+  padding-bottom: 60px;
 }
