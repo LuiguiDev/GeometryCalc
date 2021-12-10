@@ -49,8 +49,8 @@ button {
 
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?nuvgyr");
-  src: url("fonts/icomoon.eot?nuvgyr#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?nuvgyr") format("truetype"), url("fonts/icomoon.woff?nuvgyr") format("woff"), url("fonts/icomoon.svg?nuvgyr#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?hkxmxk");
+  src: url("fonts/icomoon.eot?hkxmxk#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?hkxmxk") format("truetype"), url("fonts/icomoon.woff?hkxmxk") format("woff"), url("fonts/icomoon.svg?hkxmxk#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -68,8 +68,8 @@ button {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-twitter:before {
-  content: "";
+.icon-instagram:before {
+  content: "";
 }
 
 .icon-linkedin:before {
